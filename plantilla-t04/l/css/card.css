@@ -1,0 +1,137 @@
+/* ===== FONDO GENERAL (SIN OPACIDAD) ===== */
+.background{
+    min-height:100vh;
+    background:url("./imgs/fondo.png") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ===== CONTENEDOR CON OPACIDAD + MARGEN ===== */
+.card{
+    width:95%;
+    min-height:calc(100vh - 40px);
+    margin:20px;
+    background: rgba(192,123,64,0.65);
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    border-radius:16px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* ===== HEADER ===== */
+.logo img{
+    height:50px;
+}
+
+/* ICONOS VERTICALES */
+.social-icons{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.social-icons a{
+    color:#fff;
+    font-size:22px;
+    text-decoration:none;
+    transition:transform 0.2s, color 0.2s;
+}
+
+.social-icons a:hover{
+    color: var(--color1);
+    transform:scale(1.15);
+}
+
+/* ===== CUERPO ===== */
+.content{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:40px;
+    gap:30px;
+}
+
+.text-content{
+    width:55%;
+}
+
+.text-content h1{
+    font-size:3.8rem;
+    color: #FFF;
+    margin-bottom:15px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.offer{
+    background: var(--color2);
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:8px;
+    font-size:1.4rem;
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:3rem;
+    font-weight:bold;
+    color: #FFF;
+}
+
+.image-content{
+    width:45%;
+    display:flex;
+    justify-content:center;
+}
+
+.image-content img{
+    max-width:300px;
+    width:100%;
+}
+
+/* ===== FOOTER ===== */
+.footer-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.qr img{
+    width:120px;
+}
+
+.info p{
+    font-size:0.95rem;
+    line-height:1.4;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+    .content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .text-content,
+    .image-content{
+        width:100%;
+    }
+
+    footer{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
+    }
+
+    .social-icons{
+        flex-direction:row;
+        gap:20px;
+    }
+
+    .card{
+        margin:10px;
+        min-height:calc(100vh - 20px);
+    }
+}

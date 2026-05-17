@@ -1,0 +1,139 @@
+/* ===== FONDO PRINCIPAL SIN OPACIDAD ===== */
+.background{
+    min-height:100vh;
+    background:url("./imgs/fondo.png") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ===== CONTENEDOR CON OPACIDAD ===== */
+
+.card{
+    width:95%;
+    min-height:calc(100vh - 40px); /* ajusta al margen */
+    /*margin:30px;                  /* separación del marco */
+    padding: 20px;
+    background:rgba(17,49,62,0.65);
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    border-radius:16px;
+}
+
+
+/* ===== ENCABEZADO ===== */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+
+.logo img{
+    height:90px;
+}
+
+.social-icons a{
+    color:#fff;
+    margin-left:15px;
+    font-size:22px;
+    text-decoration:none;
+}
+
+.social-icons a:hover{
+    color: var(--color0);
+}
+
+/* ===== CUERPO ===== */
+.content{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px;
+    gap:30px;
+}
+
+.text-content{
+    width:55%;
+}
+
+.text-content h1{
+    font-size:2.8rem;
+    margin-bottom:15px;
+}
+
+.offer{
+    background:var(--color0);
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:8px;
+    font-size:1.4rem;
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:3rem;
+    font-weight:bold;
+    color: var(--color1);
+}
+
+.image-content{
+    width:55%;
+    display:flex;
+    justify-content:center;
+}
+
+.image-content img{
+    max-width:500px;
+    width:100%;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+.qr img{
+    width:100px;
+}
+
+.info{
+    font-size:0.95rem;
+}
+
+.info p{
+    margin-bottom:6px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+    
+    .card{
+        margin:10px;
+        min-height:calc(100vh - 20px);
+        border-radius:12px;
+    }
+
+
+    .content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .text-content,
+    .image-content{
+        width:100%;
+    }
+
+    .text-content h1{
+        font-size:2.2rem;
+    }
+
+    .price{
+        font-size:2.4rem;
+    }
+
+    footer{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+}

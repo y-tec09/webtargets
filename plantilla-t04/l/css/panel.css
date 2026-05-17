@@ -1,0 +1,51 @@
+/*Importación de complementos*/
+@import url('card.css');
+
+/*Animaciones*/
+
+/*Fin de importación*/
+
+/*Declaración de variables globales*/
+:root { 
+	--color0: #F8F8F6;
+	--color1: #EBBBAD;
+	--color2: #C07B40;
+	--color3: #F7CC99; 
+	--color4: #D7C6B6;
+	--color5: #CFA46D;
+	--color6: transparent;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body { 
+	margin: 0; 
+	font-family: 'Montserrat', sans-serif; 
+	background-color: var(--color1); 
+	color: var(--color2); 
+	height:100vh;
+} 
+/* ===== ENCABEZADO ===== */
+header { 
+	background-color: var(--color6);
+	color: var(--color4); 
+	/*padding: 2rem;
+	text-align: center;*/
+	display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
+}
+footer{
+    /*background:rgba(233,150,122,0.95);*/
+    color: var(--color4);
+    background-color: var(--color6);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    flex-wrap:wrap;
+}

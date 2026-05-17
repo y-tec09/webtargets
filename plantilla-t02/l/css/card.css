@@ -1,0 +1,110 @@
+.card{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:
+        linear-gradient(rgba(31,62,28,0.55), rgba(165,184,94,0.55)),
+        url("./imgs/fondo.png") center/cover no-repeat;
+    color: #fff;
+}
+
+/* ===== ENCABEZADO ===== */
+.logo img{
+    height:70px;
+}
+
+.social-icons a{
+    color:#fff;
+    margin-left:15px;
+    font-size:22px;
+    text-decoration:none;
+}
+
+.social-icons a:hover{
+    color: var(--color5);
+}
+
+/* ===== CUERPO ===== */
+.content{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:40px;
+    gap:30px;
+}
+
+.text-content{
+    width:55%;
+}
+
+.text-content h1{
+    font-size:2.8rem;
+    margin-bottom:15px;
+}
+
+.offer{
+    background: var(--color3);
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:8px;
+    font-size:1.4rem;
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:3rem;
+    font-weight:bold;
+    color: #fff;
+}
+
+.image-content{
+    width:45%;
+    display:flex;
+    justify-content:center;
+}
+
+.image-content img{
+    max-width:500px;
+    width:100%;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+.qr img{
+    width:100px;
+}
+
+.info{
+    font-size:0.95rem;
+}
+
+.info p{
+    margin-bottom:6px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+    .content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .text-content,
+    .image-content{
+        width:100%;
+    }
+
+    .text-content h1{
+        font-size:2.2rem;
+    }
+
+    .price{
+        font-size:2.4rem;
+    }
+
+    footer{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+}

@@ -1,0 +1,159 @@
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.card {
+  position: relative;          /* necesario para el pseudo-elemento */
+  min-height: 100vh;           /* ocupa toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #3572AB;
+
+  background: url("./imgs/fondo.png") no-repeat center center / cover;
+  overflow: hidden;
+}
+
+/* Capa de opacidad */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;                    /* cubre todo el contenedor */
+  background: rgba(0, 0, 0, 0.4); /* negro con 40% de opacidad, ajusta a tu gusto */
+  z-index: 0;                  /* detrás del contenido */
+}
+
+/* Asegura que el contenido esté encima de la capa */
+.card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== ENCABEZADO ===== */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #85BE0D;
+}
+.logo img {
+  max-width: 90px;
+}
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact-icons i {
+  font-size: 1.4rem;
+  color: var(--color1);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.contact-icons i:hover {
+  transform: scale(1.2);
+  color: var(--color4);
+}
+/* ===== CUERPO ===== */
+main {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 30px;
+}
+.content-left,
+.content-right {
+  flex: 1;
+  background: transparent;
+  padding: 0px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* CONTENEDOR 1 */
+.product-info {
+  text-align: center;
+}
+.product-info h1 {
+  font-size: 5rem;
+  color: #FFF;
+  margin-bottom: 15px;
+  font-family: 'Alfa Slab One', serif;
+}
+.price {
+  font-size: 2rem;
+  color: var(--color1);
+  font-family: 'Alfa Slab One', serif;
+}
+.discount {
+  font-size: 1.2rem;
+  color: var(--color1);
+  font-family: 'Alfa Slab One', serif;
+  margin-top: 8px;
+}
+/* CONTENEDOR 2 */
+.content-right img {
+  max-width: 50%;
+  height: auto;
+}
+/* ===== PIE DE PÁGINA ===== */
+footer div {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer div span {
+  font-family: 'Alfa Slab One', serif;
+}
+footer img {
+  width: 80px;
+  height: 80px;
+}
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;   /* apila los bloques */
+    align-items: center;      /* centra el contenido */
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .content-left,
+  .content-right {
+    width: 100%;              /* cada bloque ocupa todo el ancho */
+    padding: 20px;
+  }
+
+  .product-info h1 {
+    font-size: 2rem;          /* título más pequeño */
+  }
+
+  .price {
+    font-size: 1.6rem;
+  }
+
+  .discount {
+    font-size: 1rem;
+  }
+
+  header {
+    flex-direction: column;   /* logo arriba, íconos abajo */
+    gap: 15px;
+    text-align: center;
+  }
+
+  .contact-icons {
+    flex-direction: row;      /* íconos en fila */
+    justify-content: center;
+  }
+
+  footer {
+    flex-direction: column;   /* pie apilado */
+    align-items: center;
+    text-align: center;
+  }
+
+  footer div {
+    justify-content: center;
+  }
+}

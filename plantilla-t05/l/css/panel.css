@@ -1,0 +1,62 @@
+/*Importación de complementos*/
+@import url('card.css');
+
+/*Animaciones*/
+
+/*Fin de importación*/
+
+/*Declaración de variables globales*/
+:root { 
+	--color0: #131C1B;
+	--color1: #090000;
+	--color2: #F1D492; 
+	--color3: #BF8150; 
+	--color4: #BF8150;
+	--color5: #B28163;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body { 
+  margin: 0; 
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; 
+  color: var(--color2); 
+  min-height: 100vh;           /* usar min-height en lugar de height */
+  width: 100%;                 /* mejor que 100vw para evitar scroll horizontal */
+  background: linear-gradient(
+    135deg, 
+    var(--color2) 0%, 
+    var(--color3) 50%, 
+    var(--color3) 100%
+  );
+  background-attachment: fixed; /* asegura que el fondo se mantenga fijo */
+  background-repeat: no-repeat;
+  background-size: cover;       /* expande el degradado a toda la pantalla */
+  overflow-x: hidden;           /* evita scroll horizontal */
+}
+
+/* ===== ENCABEZADO ===== */
+header { 
+	background-color: transparent; 
+	color: var(--color4); 
+	/*padding: 2rem;
+	text-align: center;*/
+	display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+}
+footer{
+    /*background:rgba(233,150,122,0.95);*/
+    color: var(--color1);
+    background-color: transparent;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    flex-wrap:wrap;
+}

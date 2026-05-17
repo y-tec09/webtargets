@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+	<!-- Codificación y responsive -->
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="author" content="YKK">
+
+  	<!-- SEO básico -->
+  	<title>Cemitas poblanas</title>
+  	<meta name="description" content="El auténtico sabor de Puebla en cada mordida. Disfruta de nuestras cemitas preparadas con pan de piso artesanal, milanesa crujiente, quesillo fresco y el toque indispensable de pápalo. Una explosión de sabor tradicional que respeta la receta original de los mercados poblanos. ¡Ven por la tuya!">
+  	<meta name="robots" content="index, follow">
+
+  	<!-- Canonical (evita duplicados) -->
+  	<link rel="canonical" href="https://y-tec09.github.io/ykk/">
+
+  	<!-- Idiomas (ejemplo para México y España) -->
+  	<link rel="alternate" hreflang="es-MX" href="https://y-tec09.github.io/ykk/">
+  	<link rel="alternate" hreflang="es-ES" href="https://y-tec09.github.io/ykk/">
+
+	<!-- Open Graph (Facebook / Whatsapp / Pinterest) -->
+	<!--Usar imagenes de 1200 x 630-->
+	<meta property="og:title" content="Cemitas poblanas" />
+	<meta property="og:description" content="El auténtico sabor de Puebla en cada mordida. Disfruta de nuestras cemitas preparadas con pan de piso artesanal, milanesa crujiente, quesillo fresco y el toque indispensable de pápalo. Una explosión de sabor tradicional que respeta la receta original de los mercados poblanos. ¡Ven por la tuya!" />
+	<meta property="og:url" content="https://y-tec09.github.io/ykk/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="./l/css/imgs/logo-2.png" />
+	<meta property="og:image:alt" content="Cemitas" />
+
+	<!-- Twitter Card -->
+	<!--Usar imagenes de 1200 x 630-->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Cemitas poblanas" />
+	<meta name="twitter:description" content="El auténtico sabor de Puebla en cada mordida. Disfruta de nuestras cemitas preparadas con pan de piso artesanal, milanesa crujiente, quesillo fresco y el toque indispensable de pápalo. Una explosión de sabor tradicional que respeta la receta original de los mercados poblanos. ¡Ven por la tuya!" />
+	<meta name="twitter:image" content="./l/css/imgs/logo.png" />
+	<meta name="twitter:site" content="https://y-tec09.github.io/ykk/" />
+
+	<!--Lista de links locales-->
+	<link rel="shortcut icon" href="./l/css/imgs/logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="./l/css/panel.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+</head>
+<body onload="move()" oncontextmenu="return false">
+	<section class="card">
+    <!-- ENCABEZADO -->
+    <header>
+      <div class="logo"><img src="./l/css/imgs/logo.png" alt="Logo"></div>
+
+      <div class="contact-icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-whatsapp"></i>
+        <i class="fas fa-phone"></i>
+      </div>
+    </header>
+
+    <!-- CUERPO -->
+    <main>
+      <!-- CONTENEDOR 1 -->
+      <section class="content-left">
+        <div class="product-info">
+          <h1>Cemita clasica</h1>
+          <div class="price">$45 MXN</div>
+          <div class="discount"> + Refresco gratis!!!</div>
+        </div>
+      </section>
+
+      <!-- CONTENEDOR 2 -->
+      <section class="content-right">
+        <img
+          src="./l/css/imgs/producto.png"
+          alt="Planta"
+        />
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <div>
+        <img
+          	src="./l/css/imgs/QR.png"
+ 			alt="QR ubicación"
+        />
+        <span>Ubícanos</span>
+      </div>
+
+      <div>
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Av. Jardín 123, CDMX</span>
+      </div>
+
+      <div>
+        <i class="fas fa-clock"></i>
+        <span>Lun – Sáb: 9:00 a.m. – 6:00 p.m.</span>
+      </div>
+    </footer>
+  </section>
+
+  <script>
+    // JS sencillo de ejemplo
+    document.querySelectorAll(".contact-icons i").forEach((icon) => {
+      icon.addEventListener("click", () => {
+        alert("Contacto próximamente disponible.");
+      });
+    });
+  </script>
+</body>
+</html>
