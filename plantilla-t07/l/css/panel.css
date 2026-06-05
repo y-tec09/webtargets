@@ -1,0 +1,35 @@
+/*Importación de complementos*/
+@import url('card.css');
+
+/*Animaciones*/
+
+/*Fin de importación*/
+
+/*Declaración de variables globales*/
+:root { 
+	--color0: #000000;
+	--color1: #802D00;
+	--color2: #340000;
+	--color3: #BEB742;
+	--color4: #9E644D;
+	--color5: #BF6E1C;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* ===== BODY ===== */
+body { 
+  margin: 0;                  /* elimina márgenes por defecto */
+  padding: 20px;              /* espacio alrededor */
+  background-color: var(--color3);
+  
+  display: flex;
+  justify-content: center;    /* centra horizontalmente */
+  align-items: flex-start;    /* alinea arriba, no fuerza al centro vertical */
+  min-height: 100vh;          /* ocupa toda la pantalla */
+  box-sizing: border-box;
+  overflow-x: hidden;         /* evita scroll horizontal */
+}
